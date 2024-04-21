@@ -1,0 +1,85 @@
+/* Slider - User block */
+.users {
+  display: flex;
+  flex-direction: row;
+  gap: 0 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.user {
+  min-width: calc(33.3% - 12px);
+  text-align: center;
+  padding: 0 30px;
+}
+
+.user img {
+  display: block;
+  width: 100%;
+}
+
+.user h5 {
+  padding: 28px 0 6px 0;
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.user a {
+  display: inline-block;
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  padding: 12px;
+  color: #3057A2;
+  border: 1px solid #3057A2;
+  border-radius: 62px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.user p {
+  line-height: 1.1;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  background: #313131 url(../img/arrow.png) no-repeat 58% center;
+  border: none;
+  border-radius: 100%;
+  font-size: 24px;
+  line-height: 44px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.prev-button {
+  right: 54px;
+  rotate: 180deg;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user {
+    min-width: calc(50% - 12px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .user {
+    min-width: calc(100% - 12px);
+  }
+}
+
+@media only screen and (max-width: 380px) {
+
+  .prev-button,
+  .next-button {
+    top: 50px;
+  }
+}
